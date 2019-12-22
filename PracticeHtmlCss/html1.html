@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Guide Html && Css1</title>
+    <!-- can set in tag style in same file and set in css file  -->
+    <link href="style2.css" rel="stylesheet" type="text/css">
+    <style>
+        /* selector set tag */
+        
+        body {
+            font-family: Arial;
+        }
+        
+        h2 {
+            color: firebrick;
+            text-decoration: underline;
+            /* text-align: center; */
+        }
+        /* selector set id */
+        
+        #username {
+            background-color: yellow;
+        }
+        /* selector set class */
+        
+        .color-body {
+            /* background-color: lightyellow; */
+        }
+        
+        p {
+            /*ความสูงระหว่างบรรทัด */
+            line-height: 60px;
+            letter-spacing: 2px;
+            /* column-count: 3; */
+            /* column-gap: 60px; */
+        }
+        
+        ul {
+            /* border-width: 4px;
+            border-style: solid;
+            border-color: firebrick; */
+            /* border: 5px solid crimson;
+            border-bottom: 5px solid crimson;
+            border-top: 5px dashed crimson;
+            border-left: 5px dotted crimson;
+            border-right: 5px double crimson; */
+        }
+        
+        li {
+            /* list-style-type: square; */
+            /* text-shadow: 2px 2px red; */
+        }
+    </style>
+</head>
+
+<body class="color-body">
+    <!-- h -->
+    <div>
+        <h1 style="color: red;">Head
+            <span style="color: yellow;">
+            Name
+        </span>
+        </h1>
+        <h2>Head Name</h2>
+        <h3>Head Name</h3>
+        <h4>Head Name</h4>
+        <h5>Head Name</h5>
+        <h6>Head Name</h6>
+    </div>
+
+    <!-- ul && ol -->
+    <div>
+        <h2>->ul && ol</h2>
+        <ul>
+            <li>gun</li>
+            <li>akuma</li>
+            <li>walker</li>
+        </ul>
+
+        <ol>
+            <li>gun</li>
+            <li>akuma</li>
+            <li>walker</li>
+        </ol>
+    </div>
+
+    <!-- img -->
+    <h2>->Img</h2>
+    <img src="img/facebook.png" alt="facebook">
+
+    <!-- a -->
+    <div>
+        <h2>->a</h2>
+        <a href="https://www.youtube.com/watch?v=mbeT8mpmtHA&list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G&index=2">click link to somewhere</a>
+        <br><a href="index.html">click to index</a>
+    </div>
+
+    <!-- text -->
+    <div>
+        <h2>->text</h2>
+        <strong>I'm gun</strong>
+        <b>I'm gun</b>
+        <small>gunt</small>
+        <em>fsdaf<br>newline faed</em>
+        <blockquote>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, corrupti! Dignissimos nostrum iste itaque amet molestias delectus praesentium porro distinctio cum repudiandae perferendis quod aperiam, voluptatibus, reprehenderit esse error doloribus.
+        </blockquote>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem libero deleniti velit nostrum totam accusantium odio nemo eum nulla dolor sint consequatur ducimus, voluptatibus atque, quas, assumenda sed aliquam. Culpa. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Itaque ad accusantium vero odio placeat aliquam error obcaecati voluptates id mollitia temporibus, iusto qui soluta, architecto ullam beatae recusandae! Omnis, reprehenderit. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Totam natus dignissimos esse reiciendis minima illum cum nisi dolorem quae perferendis?
+        </p>
+    </div>
+
+    <!-- line -->
+    <h2>->line</h2>
+    <hr>
+
+    <!-- form && validation-->
+    <form action="">
+        <h2>->Form</h2>
+        <a href="https://www.javatpoint.com/html-form-input-types">
+            <h2>learn more</h2>
+        </a><br>
+        <!-- name atrr use binding for server side -->
+        <label for="username">UserName :</label>
+        <input type="text" id="username" name="username" placeholder="username" required>
+        <br>
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email" placeholder="e-mail" required>
+        <br>
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="password" placeholder="password" required>
+
+        <!-- radio button -->
+        <h2>->radio button</h2>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male"> Male </label><br>
+
+        <input type="radio" name="gender" value="female" id="female"> Female <br>
+        <input type="radio" name="gender" value="other" id="other"> Other <br>
+        <br>
+        <input type="radio" name="gender2" value="gay" id="gay"> Gay <br>
+        <input type="radio" name="gender2" value="gay2" id="gay2"> Gay2 <br>
+
+        <!-- selector -->
+        <h2>->selector</h2>
+        <div>
+            <h3>-template1</h3>
+            <label for="question">Security Question:</label>
+            <select name="question" id="question">
+            <option value="q1">I'm number 4</option>
+            <option value="q2">I'm number 5</option>
+            <option value="q3">I'm number 6</option>
+        </select>
+            <h3>-template2</h3>
+            <select name="question2" id="question2">
+            <option value="" disabled selected>Security Question:</option>
+            <option value="q1">I'm number 4</option>
+            <option value="q2">I'm number 5</option>
+            <option value="q3">I'm number 6</option>
+        </select>
+        </div>
+
+        <!-- text area ->input that define size ,can set flexible type that right bottom corner -->
+        <h2>->text area</h2>
+        <label for="bio">Your bio:</label><br>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="enter something....."></textarea>
+        <br>
+        <button type="submit">Submit the form</button>
+        <!-- <input type="submit" value="Submit the form"> -->
+    </form>
+</body>
+
+</html>

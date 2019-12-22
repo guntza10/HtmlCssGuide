@@ -1,0 +1,309 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: Arial;
+}
+
+body {
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+/* change colours to suit your needs */
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* change colours to suit your needs */
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* change border colour to suit your needs */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+
+/* My css */
+
+.wrapper {
+    width: 100%;
+    max-width: 960px;
+    /* แนวตั้ง - แนวนอน auto จะจัดให้อยู่ตรงกลาง */
+    margin: 0 auto;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+}
+
+header :after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#logoBrand {
+    float: left;
+}
+
+#logoImg {
+    height: 70px;
+    width: 70px;
+}
+
+#colorLogo1 {
+    color: white;
+    float: right;
+    margin-left: 10px;
+    margin-top: 26px;
+}
+
+#colorLogo2 {
+    color: red;
+}
+
+header nav {
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-family: arial;
+}
+
+header nav li {
+    float: left;
+    margin-left: 20px;
+}
+
+header nav span {
+    color: green;
+    margin-left: 20px;
+}
+
+#lead-banner {
+    width: 100%;
+    margin-bottom: 10px;
+    max-height: 750px;
+    overflow: hidden;
+    position: relative;
+}
+
+#lead-banner img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+.banner-title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 72px;
+}
+
+#lead-banner p {
+    color: white;
+    font-size: 24px;
+    max-width: 600px;
+    margin-top: 10px;
+}
+
+#lead-banner a {
+    background: #1e5799;
+    background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+    background: -webkit-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+    background: linear-gradient(to bottom, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=0);
+    color: white;
+    display: block;
+    width: 200px;
+    font-size: 18px;
+    text-align: center;
+    padding: 16px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, -4);
+}
+
+section {
+    margin: 48px 0 60px;
+}
+
+#point-of-sale ul {
+    list-style-type: none;
+}
+
+#point-of-sale h2 {
+    height: 0;
+    text-indent: -10000px;
+}
+
+#point-of-sale li {
+    float: left;
+    width: 32%;
+}
+
+#point-of-sale img {
+    width: 100%;
+}
