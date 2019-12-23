@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <title>Guide Html && Css3</title>
+    <style>
+        /* class error only p tag */
+        
+        p.error {
+            color: red;
+        }
+        
+        p.success {
+            color: green;
+        }
+        
+        p.success.feedback {
+            border: 1px green dashed;
+        }
+        /* id content of div */
+        /* when use id must be unique,couldn't use this id anywhere */
+        /* use id for javascript */
+        
+        div#content {
+            font-size: 20px;
+            background-color: #ebebeb;
+            padding: 20px;
+        }
+        
+        div h3 {
+            color: purple;
+        }
+        
+        div .error {
+            color: blue;
+        }
+        
+        a[href="https://www.youtube.com/"] {
+            background-color: green;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        /* href use include string */
+        
+        a[href*="google"] {
+            background-color: red;
+            font-size: 20px;
+            color: white;
+            /* text-decoration: none; */
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        a[href$=".io"] {
+            background-color: blue;
+            font-size: 20px;
+            color: white;
+            /* text-decoration: none; */
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Class && Selector  -->
+    <h3>->Class && Selector</h3>
+    <div id="content">
+        <p class="error">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis iusto ab impedit, fugiat architecto porro.</p>
+        <p class="success">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis iusto ab impedit, fugiat architecto porro.</p>
+        <p class="success feedback">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis iusto ab impedit, fugiat architecto porro.</p>
+
+        <div class="error">
+            lorem15
+        </div>
+
+        <h3>
+            h3 inside div
+        </h3>
+    </div>
+    <h3>
+        h3 outside div
+    </h3>
+
+    <a href="www.google.com">google1</a>
+    <a href="https://www.google.com/search?sxsrf=ACYBGNS9OT91LSuPZTcD6fJ9GveekH00kg%3A1577084480268&source=hp&ei=QGYAXo-YDdbZz7sP2c6E8Aw&q=github&oq=&gs_l=psy-ab.1.2.35i362i39l10.7229.7646..13273...8.0..0.78.78.1......0....1..gws-wiz.....10..35i39j35i39i19j0j0i131.lmOP0536m6E">google2</a>
+
+    <a href="https://www.youtube.com/">youtube1</a>
+    <a href="https://www.youtube.com/watch?v=YIKvmm55DYw">youtube2</a>
+
+    <a href="https://angular.io">last io</a>
+
+</body>
+
+</html>

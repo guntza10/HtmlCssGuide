@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<!-- rule inheritance css
+    ->margin,padding,background style border => not inherit
+    ->about font ,text ,color => be inherit
+ -->
+
+<head>
+    <title>Guide Html && Css4</title>
+    <style>
+        div {
+            color: crimson;
+            font-size: 30px;
+            border: 1px solid red;
+            margin: 20px;
+            font-weight: bold;
+        }
+        /* inherit property */
+        
+        div p {
+            margin: inherit;
+            border: inherit;
+            color: lawngreen;
+        }
+        /* when declare duplicate selector it action from top to bottom ,must not doing */
+        
+        p {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>-> Css Inheritance</h3>
+    <div>
+        text outside p tag but inside div tag
+        <p class="error">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis iusto ab impedit, fugiat architecto porro.</p>
+        <p class="success">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis iusto ab impedit, fugiat architecto porro.</p>
+        <p class="success feedback">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis iusto ab impedit, fugiat architecto porro.</p>
+        <h3>
+            h3 inside div
+        </h3>
+    </div>
+
+    <p>paragraph outside div and not have parent</p>
+
+</body>
+
+</html>
