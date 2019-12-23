@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<!-- sematic tag for code meaningful -->
+<!-- 
+        sematic tag
+        -> <main> => for main content of a web page
+        -> <section> => section of a webpage (blog ,list,contact) must be unique section
+        -> <article> => for article tag contains p tag inside
+        -> <aside> => define some content related to something else 
+            ex. inside article at the bottom have blog , 
+            because blog still to do with article(not exactly part just a little part)
+        -> <header> => for header of a website(nav,title)
+        -> <footer> => for footer of a website(contact ,information)
+        -> <nav> => for navigation bar
+     -->
+
+<head>
+    <title>Guide Html && Css5</title>
+    <link href="style2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>MarioClub</h1>
+    </header>
+
+    <section class="banner">
+        <img src="img/banner.png" alt="marioclub welcome banner">
+        <div class="welcome">
+            <h2>Welcome to <br>
+                <span>MarioClub</span>
+            </h2>
+        </div>
+    </section>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="/join.html" class="join">Join the club</a></li>
+            <li><a href="/news.html">Lates news</a></li>
+            <li><a href="/games.html">New games</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>It's me,Mario</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti provident iusto assumenda voluptatem aut sunt maiores quisquam illo ullam aspernatur quasi, modi nemo, nulla deleniti quibusdam autem praesentium nisi non. lorem Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit. Similique dolorem blanditiis, consequuntur dolorum quasi quae exercitationem, iure doloribus reiciendis hic consequatur temporibus expedita error magni tempore! A tempore quo officiis. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Dicta veniam repudiandae, ipsa animi adipisci quidem saepe nemo perspiciatis rerum mollitia laboriosam ea nam ut quis provident! Harum dolor omnis debitis!
+            </p>
+        </article>
+
+        <ul class="images">
+            <li><img src="img/thumb-1.png" alt="mario thumb1"></li>
+            <li><img src="img/thumb-2.png" alt="mario thumb2"></li>
+        </ul>
+    </main>
+
+    <section class="join">
+        <h2>Join Today!</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat vero corrupti pariatur rerum impedit assumenda sed aut sint explicabo mollitia! Porro tempore itaque quibusdam doloremque cupiditate exercitationem veritatis quaerat atque!</p>
+        <form action="">
+            <input type="email" name="email" placeholder="Type email & press enter" required>
+        </form>
+    </section>
+
+    <footer>
+        <p class="copyright">Copyright 2019 MarioClub</p>
+    </footer>
+</body>
+
+</html>
