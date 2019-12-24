@@ -4,3 +4,84 @@ p {
 
 
 /* for semantic practice */
+
+
+/* div {
+    color: red;
+    background: black;
+} */
+
+header {
+    background-color: #f63232;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    /* z-index default 0 
+    -> z-index more than 0 element bring it forward
+    -> z-index less than 0 element push it backward
+    */
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+}
+
+header h1 {
+    color: white;
+    border: 8px solid white;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 36px;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    text-align: center;
+    width: 100%;
+}
+
+.banner .welcome {
+    background-color: #feb614;
+    position: absolute;
+    left: 10px;
+    /* use percent better than px cause percent calculate position from resolution of screen that be changed */
+    /* top: 200px; bad case */
+    top: 30%;
+    color: white;
+    padding: 30px;
+}
+
+
+/* h2 it specific tag must be set separate */
+
+.banner h2 {
+    font-size: 74px;
+}
+
+.banner h2 span {
+    /* span be inherit size from h2 (74) and x 1.3 (1.3em) */
+    font-size: 1.3em;
+}
+
+nav {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+nav ul {
+    /* set ul to single line */
+    white-space: nowrap;
+    /* max-width: 100%; */
+    max-width: 1200px;
+    /* width: 1200px; */
+    margin: 0px auto;
+}
+
+nav li {
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+}
