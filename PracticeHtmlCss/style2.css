@@ -11,6 +11,17 @@ p {
     background: black;
 } */
 
+body,
+ul,
+li,
+h1,
+h2,
+a {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
 header {
     background-color: #f63232;
     padding: 20px;
@@ -69,14 +80,15 @@ header h1 {
 nav {
     background-color: #f4f4f4;
     padding: 20px;
+    position: sticky;
+    top: 100px;
 }
 
 nav ul {
     /* set ul to single line */
     white-space: nowrap;
-    /* max-width: 100%; */
+    width: 100%;
     max-width: 1200px;
-    /* width: 1200px; */
     margin: 0px auto;
 }
 
@@ -84,4 +96,149 @@ nav li {
     width: 25%;
     display: inline-block;
     font-size: 24px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+nav li a.join {
+    color: #f63232;
+}
+
+main {
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    /* 
+    เวลาเรา set width 1200px เป็นขนาดของ content อย่างเดียว
+    ที่ไม่รวม padding ,margin บลาๆ 
+    box-sizing => การ set ให้เป็น border-box 
+    จะทำให้มันคำนวณขนาดทุกอย่างให้เราได้ actual width 
+    ขนาดจริงตามที่เรา set ไว้*/
+    box-sizing: border-box;
+}
+
+article h2 {
+    color: #f63232;
+    font-size: 48px;
+}
+
+article p {
+    /* หน่วย px,em
+        ->px => เป็นหน่วยที่ฟิกค่าตายตัว
+        ->em => เป็นหน่วยที่สามารถเปลี่ยนแปลงได้ตามขนาดของ Parent 
+        (xขนาดของparent)
+        note: default 16px
+     */
+    line-height: 2em;
+    color: #4b4b4b;
+}
+
+.images {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.images li {
+    display: inline-block;
+    width: 40%;
+    margin: 0 50px;
+}
+
+.images li img {
+    max-width: 100%;
+}
+
+section.join {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4b4b4b;
+}
+
+section.join h2 {
+    font-size: 36px;
+}
+
+form input {
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px solid white;
+}
+
+footer {
+    background-color: #f63232;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* pseudo classes 
+    -> set effect 
+        hover(การเอาเม้าไปชี้)
+        focus(เมื่อโดนคลิ้ก)
+        valid(ใช้กับ form ที่ไม่ invalid)
+        invalid(ใช้กับ form ที่ไม่ valid)
+        https://www.w3schools.com/css/css_pseudo_elements.asp
+*/
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+.images li:hover {
+    position: relative;
+    top: -4px;
+}
+
+form input:focus {
+    border: 4px dashed #4b4b4b;
+    /* outline คือเส้นขอบของ element */
+    outline: none;
+}
+
+form input:valid {
+    border: 4px solid #71d300;
+}
+
+
+/* first child => set effect ให้ child ตัวแรกของ parent นั้น */
+
+nav li:first-child {
+    border: 3px solid #f63232;
+}
+
+form input:invalid {
+    border: 4px solid #f63232;
+}
+
+
+/* pseudo elements */
+
+article p::first-line {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+section.join p::first-letter {
+    font-size: 1.5em;
+}
+
+
+/* selection => เลือกเม้าก้อปปี้เลือก*/
+
+section.join p::selection {
+    background-color: #f63232;
+    color: white;
+}
+
+p::selection {
+    background-color: #f63232;
+    color: white;
 }
