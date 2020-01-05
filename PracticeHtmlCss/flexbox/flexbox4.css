@@ -1,0 +1,27 @@
+.flex-container {
+    display: flex;
+    background-color: grey;
+    /* flex wrap 
+        define flex item has flex-grow 1 then shrink browser until over
+        min-width but flex item has flex grow rate 1 ,flex wrap make wrap newline
+     */
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 100px;
+    min-width: 200px;
+    flex-grow: 1;
+}
+
+.one {
+    background-color: red;
+}
+
+.two {
+    background-color: yellow;
+}
+
+.three {
+    background-color: green;
+}

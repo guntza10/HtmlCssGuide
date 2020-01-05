@@ -1,0 +1,28 @@
+.flex-container {
+    display: flex;
+    background-color: grey;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 100px;
+    /* flex-basis -> define min-width for flex item
+    difference min-width that no scroll bar
+     */
+    /* min-width: 500px; */
+    /* flex-basis: 500px; */
+    /* flex : flex-grow, flex-shrink, flex-basis */
+    flex: 1 0 200px;
+}
+
+.one {
+    background-color: red;
+}
+
+.two {
+    background-color: yellow;
+}
+
+.three {
+    background-color: green;
+}

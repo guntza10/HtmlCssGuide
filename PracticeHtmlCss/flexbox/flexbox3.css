@@ -1,0 +1,28 @@
+.flex-container {
+    display: flex;
+    background-color: grey;
+}
+
+.box {
+    height: 100px;
+    width: 320px;
+}
+
+.one {
+    background-color: red;
+    /*  => flex-shrink -> rate relative with each flex item
+    note: Rarely used (ใช้น้อย)
+        rate width  of each flex item in flex-container when browser shrink
+    */
+    flex-shrink: 5;
+}
+
+.two {
+    background-color: yellow;
+    flex-shrink: 5;
+}
+
+.three {
+    background-color: green;
+    flex-shrink: 6;
+}

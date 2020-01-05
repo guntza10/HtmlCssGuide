@@ -1,0 +1,28 @@
+.flex-container {
+    display: flex;
+    background-color: grey;
+}
+
+.box {
+    height: 100px;
+    min-width: 100px;
+}
+
+.one {
+    background-color: red;
+    /* => flex-grow -> rate relative with each flex item
+     rate width of each flex item in flex-container -> define column by rate
+     ex. 4-6-2 result same 2-3-1
+    */
+    flex-grow: 4;
+}
+
+.two {
+    background-color: yellow;
+    flex-grow: 6;
+}
+
+.three {
+    background-color: green;
+    flex-grow: 2;
+}

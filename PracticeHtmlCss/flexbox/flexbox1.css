@@ -1,0 +1,23 @@
+.flex-container {
+    /* default flex item in flex container is row*/
+    display: flex;
+    /* flex-direction: column */
+    background-color: grey;
+}
+
+.box {
+    height: 100px;
+    min-width: 200px;
+}
+
+.one {
+    background-color: red;
+}
+
+.two {
+    background-color: yellow;
+}
+
+.three {
+    background-color: green;
+}
