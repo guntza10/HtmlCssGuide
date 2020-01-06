@@ -1,0 +1,53 @@
+/* 
+    align-items -> effect for cross axis
+ */
+
+.flex-container-row {
+    display: flex;
+    height: 800px;
+    background-color: grey;
+    flex-wrap: wrap;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container-column {
+    display: flex;
+    height: 800px;
+    background-color: grey;
+    flex-wrap: wrap;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 {
+    height: 100px;
+    flex: 0 0 100px;
+}
+
+.box2 {
+    width: 100px;
+    flex: 0 0 100px;
+}
+
+.one {
+    background-color: red;
+}
+
+.two {
+    background-color: yellow;
+}
+
+.three {
+    background-color: green;
+}
+
+.flow-row {
+    margin: 20px;
+}
+
+.flow-column {
+    margin: 20px;
+}

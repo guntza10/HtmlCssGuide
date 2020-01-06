@@ -1,0 +1,53 @@
+/* flex flow has 2 axis
+    -> main axis
+    -> cross axis
+ */
+
+
+/* justify-content => relative with flow 
+    ->effect for main axis
+*/
+
+.flex-container-row {
+    display: flex;
+    width: 100%;
+    background-color: grey;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-container-column {
+    display: flex;
+    width: 100%;
+    background-color: grey;
+    flex-wrap: wrap;
+    flex-flow: column;
+    /* flex-direction: column; */
+    height: 800px;
+    justify-content: center;
+}
+
+.box {
+    height: 100px;
+    flex: 0 0 100px;
+}
+
+.one {
+    background-color: red;
+}
+
+.two {
+    background-color: yellow;
+}
+
+.three {
+    background-color: green;
+}
+
+.flow-row {
+    margin: 20px;
+}
+
+.flow-column {
+    margin: 20px;
+}
