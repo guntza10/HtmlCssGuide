@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Align and Justify Items</title>
+    <style>
+        body {
+            color: #fff;
+            font-family: 'Nunito Semibold';
+            text-align: center;
+        }
+        
+        #content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: minmax(150px, auto);
+            grid-gap: 10px;
+            max-width: 960px;
+            margin: 0 auto;
+            /* align-items -> set position for each grid item ref vertical (in grid container)
+                -top (start)
+                -center (center)
+                -bottom (end)
+               note: default -> stretch
+              */
+            /* align-items: end; */
+            /* justify-items -> set position for each grid item ref horizontal (in grid container)
+                -left (start)
+                -center (center)
+                -right (end)
+                 note: default -> stretch
+              */
+            /* justify-items: end; */
+        }
+        
+        #content div {
+            background: #3bbced;
+            padding: 30px;
+            /* justify-self: start;
+            align-self: start; */
+        }
+        
+        #content div:nth-child(even) {
+            background: #777;
+            padding: 30px;
+        }
+        
+        .one {
+            /* align-self and justify-self for 1 item*/
+            align-self: end;
+            justify-self: start;
+        }
+        
+        .two {
+            align-self: center;
+            justify-self: center;
+        }
+        
+        .three {
+            align-self: start;
+            justify-self: end;
+        }
+        
+        .four {
+            align-self: start;
+            justify-self: start;
+        }
+        
+        .five {
+            align-self: center;
+            justify-self: center;
+        }
+        
+        .six {
+            align-self: end;
+            justify-self: end;
+        }
+        /*  
+            note: 
+            ->align-item,justify-item => for all grid item in grid container
+            ->align-self,justify-self => for 1 grid item
+        */
+    </style>
+</head>
+
+<body>
+
+    <div id="content">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+    </div>
+
+</body>
+
+</html>

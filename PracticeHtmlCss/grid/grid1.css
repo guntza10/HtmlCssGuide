@@ -11,13 +11,21 @@
       แถวที่2: สูง 200px
       แถวที่3: สูง 50px
     */
+    /* define to percent or fr or px */
     grid-template-rows: 50px 200px 50px;
+    /* 
+        grid-auto-rows: 200px; -> fix height of all row*
+        grid-auto-rows: minmax(200px,auto); -> min 200px if over than 200px auto
+        note: minmax(200px,auto) -> dimension 
+        ex. grid-template-rows: repeat(3,minmax(200px,auto));
+    /
     /*
       define width of column
       คอลัมภ์ 1: กว้าง 200px
       คอลัมภ์ 2: กว้าง 500px
     */
     grid-template-columns: 200px 500px;
+    /* grid-template-columns:repeat(3,1fr) => repeat 3 times dimension 1fr  */
     color: #FFF;
     font-weight: bold;
     text-align: center;
@@ -45,6 +53,7 @@
         define start to amount column that cover
      */
     grid-column: 1 / span 2;
+    /*grid-column: span 2; -> ref from current position and cover 2 cell area*/
 }
 
 .main {
