@@ -5,22 +5,27 @@
 
 .container {
     display: grid;
+    /* Fraction Unit (fr) -> rate of dimension */
     /*
-      define height of row
-      แถวที่1: สูง 50px
-      แถวที่2: สูง 200px
-      แถวที่3: สูง 50px
-    */
-    grid-template-rows: 50px 200px 50px;
+    แถวแรกจะมีความสูงเป็น 1 ใน 5 ของความสูงทั้งหมด
+    แถวสองจะมีความสูงเป็น 3 ใน 5 ของความสูงทั้งหมด
+    แถวสามจะมีความสูงเป็น 1 ใน 5 ของความสูงทั้งหมด
+  */
+    /* grid-template-rows: 1fr 3fr 1fr; */
+    /* grid-template-rows: 200px 1fr 3fr ;
+        => พื้นที่ทั้งหมดหักออกไป 200px ก่อน จึงจะเริ่มแบ่งพื้นที่ออกเป็น 4 ส่วนแล้วแจกให้ 1fr กับ 3fr ต่อไป
+     */
     /*
-      define width of column
-      คอลัมภ์ 1: กว้าง 200px
-      คอลัมภ์ 2: กว้าง 500px
-    */
-    grid-template-columns: 200px 500px;
+    หลักแรกจะมีความกว้างเป็น 1 ใน 4 ของความกว้างทั้งหมด
+    หลักสองจะมีความกว้างเป็น 3 ใน 4 ของความกว้างทั้งหมด
+  */
+    /* grid-template-columns: 1fr 3fr; */
     color: #FFF;
     font-weight: bold;
     text-align: center;
+    /* define name gridline */
+    grid-template-rows: [header-start] 1fr [header-end content-start] 3fr [content-end footer-start] 1fr [footer-end];
+    grid-template-columns: [sidebar-start] 1fr [sidebar-end main-start] 3fr [main-end];
 }
 
 .container>* {
@@ -29,21 +34,7 @@
 
 .header {
     background: #8CC152;
-    /*
-    Header ต้องเริ่มจาก Line1 แล้วไปสิ้นสุดที่ Line 3
-    โปรดสังเกต เราใช้คำว่า grid-column
-    */
-    /* 
-        grid-column-start: 1; 
-        grid-column-end: 3;          
-        => grid-column: 1 / 3; 
-        note: -1 is the last grid line
-        => grid-column: 1 / -1;
-    */
-    /* 
-        define start to amount column that cover
-     */
-    grid-column: 1 / span 2;
+    grid-column: sidebar-start / main-end;
 }
 
 .main {
@@ -56,5 +47,5 @@
 
 .footer {
     background: #D770AD;
-    grid-column: 1 / span 2;
+    grid-column: sidebar-start / main-end;
 }

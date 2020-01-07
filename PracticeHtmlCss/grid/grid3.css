@@ -1,0 +1,62 @@
+/* grid area */
+
+.container1 {
+    margin: 20px;
+    display: grid;
+    color: #FFF;
+    font-weight: bold;
+    /* 1 -> define grid template area ,column ,row*/
+    /* define dimension */
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    /* row */
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+}
+
+.container2 {
+    margin: 20px;
+    display: grid;
+    color: black;
+    font-weight: bold;
+    /* 2 -> define grid templaete*/
+    /* มันคือ <grid-template-rows> / <grid-template-columns> */
+    grid-template: "header header" 1fr "sidebar main" 3fr "footer footer" 1fr / 1fr 3fr;
+    /* grid gap */
+    grid-gap: 10px;
+}
+
+
+/* 
+   -> x > y only child y in parent x 
+   -> * all element
+   https://code.tutsplus.com/th/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+*/
+
+.container1>* {
+    padding: 10px;
+}
+
+.container2>* {
+    padding: 10px;
+}
+
+.header {
+    background: #8CC152;
+    /* set grid item on grid area */
+    grid-area: header;
+}
+
+.main {
+    background: #F6BB42;
+    grid-area: main;
+}
+
+.sidebar {
+    background: #E9573F;
+    grid-area: sidebar;
+}
+
+.footer {
+    background: #D770AD;
+    grid-area: footer;
+}
