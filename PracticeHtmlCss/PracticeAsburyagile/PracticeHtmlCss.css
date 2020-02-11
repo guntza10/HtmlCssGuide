@@ -1,0 +1,201 @@
+body,
+ul,
+li,
+h1,
+h2,
+a {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  background-color: brown;
+}
+
+.header-container {
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 10px;
+  /* top-bottom  left-right*/
+  margin: 0 auto;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: fuchsia;
+}
+
+/*#region banner*/
+
+.banner {
+  background-color: #141414;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 700px;
+  margin: 0 auto;
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-container .img {
+  margin: 20px auto;
+}
+
+blockquote {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+}
+
+.button-buy-ticket {
+  background-color: #db008b;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.button-buy-ticket:hover {
+  background-color: #adabab;
+}
+
+/*#endregion */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+
+h1 {
+  text-align: center;
+}
+
+p.paragraph {
+  text-align: center;
+  font-size: 22px;
+}
+
+.paragraph a {
+  color: #db008b;
+}
+
+.paragraph span {
+  color: #db008b;
+}
+
+.line {
+  width: 100%;
+  border: 0.5px solid #adabab;
+}
+
+/* #region speakers */
+.speakers {
+  margin: 50px;
+  width: 60%;
+}
+
+.speakers-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 30px;
+  justify-items: center;
+}
+
+.speaker-item {
+  width: 100%;
+}
+
+.speaker-item h4 {
+  text-align: center;
+}
+
+.speaker-item p {
+  text-align: center;
+}
+
+.speaker-item img {
+  width: 100%;
+}
+/* #endregion  */
+
+/* #region workShops */
+.workShops {
+  margin: 50px;
+  width: 60%;
+}
+
+.workShop-container {
+  display: flex;
+  justify-content: center;
+}
+
+.workShop-container div {
+  /* height: 100px; */
+  /* flex: 0 0 100px;
+  margin: 0 10px;
+  text-align: center; */
+}
+
+.workShop-container img {
+  /* width: 60%; */
+  /* text-align: center; */
+}
+
+/* #endregion */
+
+/* #region location */
+.location {
+  margin: 50px;
+  width: 60%;
+}
+/* #endregion */
+
+/* #region sponsors */
+.sponsors {
+  margin: 50px;
+  width: 60%;
+}
+/* #endregion */
+
+/* #region learn-more */
+.learn-more {
+  margin: 50px;
+  width: 60%;
+}
+/* #endregion */
+
+/* #region newsletter */
+.newsletter {
+  margin: 50px;
+  width: 60%;
+}
+/* #endregion */

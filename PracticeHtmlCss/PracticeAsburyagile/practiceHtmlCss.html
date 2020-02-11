@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="PracticeHtmlCss.css" rel="stylesheet" type="text/css"></script>
+    <link href="PracticeHtmlCss.css" rel="stylesheet" type="text/css">
     <title>Practice Html Css</title>
 </head>
 
 <body>
     <header>
-        <div class="wrap">
+        <div class="header-container">
             <nav>
                 <ul>
                     <li>
@@ -40,21 +40,25 @@
     </header>
 
     <div class="banner">
-        <div class="wrap">
-            <img src="">
+        <div class="banner-container">
+            <div class="img">
+                <img src="img/logo.PNG">
+            </div>
             <blockquote>Asbury Agile is a friendly, informal, single-track conference for technology professionals &
                 students held annually in Asbury Park, NJ on Friday, October 4th. We also feature workshops on the
                 Thursday, October 3rd, before the conference.
             </blockquote>
-            <button class="btn-banner">Buy Tickets!</button>
+            <div>
+                <button class="button-buy-ticket">Buy Tickets!</button>
+            </div>
         </div>
     </div>
 
     <main>
-        <div class="wrap">
+        <div class="main-container">
             <section class="speakers">
-                <h2>Speakers</h2>
-                <p>We're stoked to announce the awesome group of featured speakers below, and
+                <h1>Speakers</h1>
+                <p class="paragraph">We're stoked to announce the awesome group of featured speakers below, and
                     <span>
                         <a href="">stay tuned</a>
                     </span>for more
@@ -62,46 +66,62 @@
                 </p>
                 <div class="speakers-container">
                     <div class="speaker-item">
-                        <img src="">
-                        <h5>Skyler Balbus</h5>
+                        <img
+                            src="https://d33wubrfki0l68.cloudfront.net/b536cac6f1b467247a1a890a820ee44786e05f7e/505e5/static/2019/img/speakers/skyler.jpg">
+                        <h4>Skyler Balbus</h4>
                         <p>Director of Product Design, Postlight</p>
                     </div>
 
                     <div class="speaker-item">
-                        <img src="">
-                        <h5>Spike Brehm</h5>
+                        <img
+                            src="https://d33wubrfki0l68.cloudfront.net/dbdb861954164b2cf7dcde7f08c7ca911b6121b4/91fbf/static/2019/img/speakers/spike-headshot.jpg">
+                        <h4>Spike Brehm</h4>
                         <p>Engineering Lead,Emerging Technology R&D,Airbnb</p>
                     </div>
 
                     <div class="speaker-item">
-                        <img src="">
-                        <h5>Will Gallego</h5>
+                        <img
+                            src="https://d33wubrfki0l68.cloudfront.net/c73b7076b018b88974c0dc34561b81089886775f/9084c/static/2019/img/speakers/will.jpg">
+                        <h4>Will Gallego</h4>
                         <p>Senior Software Engineer,Fasty</p>
                     </div>
 
                     <div class="speaker-item">
-                        <img src="">
-                        <h5>Dan Mall</h5>
+                        <img
+                            src="https://d33wubrfki0l68.cloudfront.net/4522efcd1c65740fedbcefe7547eac92adccfdcb/98d83/static/2019/img/speakers/dmall.png">
+                        <h4>Dan Mall</h4>
                         <p>Founder and Director,SuperFriendly</p>
                     </div>
 
                     <div class="speaker-item">
-                        <img src="">
-                        <h5>Aditya Mukerjee</h5>
+                        <img
+                            src="https://d33wubrfki0l68.cloudfront.net/8a68ea513ee07207e9802c6a890b81311d0a0ae8/f57cd/static/2019/img/speakers/aditya3.jpg">
+                        <h4>Aditya Mukerjee</h4>
                         <p>Risk Engineer,Stripe</p>
                     </div>
 
-                    <div>
-                        <img src="">
-                        <h5>Shawn Wang</h5>
+                    <div class="speaker-item">
+                        <img
+                            src="https://d33wubrfki0l68.cloudfront.net/48c4c5d6e10b744431e252a0552398fca9744238/5a7b6/static/2019/img/speakers/nitya.png">
+                        <h4>Nitya Narasimhan</h4>
+                        <p>Senior Program Manager, Developer Relations, Microsofte</p>
+                    </div>
+
+                    <div class="speaker-item">
+                        <img
+                            src="https://d33wubrfki0l68.cloudfront.net/39cf840a436ad31f37264cc2e91816b3436ee5a0/2b2fb/static/2019/img/speakers/shawn.jpeg">
+                        <h4>Shawn Wang</h4>
                         <p>DX Engineer,Nerlify</p>
                     </div>
                 </div>
             </section>
 
+            <div class="line"></div>
+
             <section class="workShops">
-                <h2>WorkShops</h2>
-                <p>Our first year of workshops was a success (thanks!) and we're amped to offer workshops again this
+                <h1>WorkShops</h1>
+                <p class="paragraph">Our first year of workshops was a success (thanks!) and we're amped to offer
+                    workshops again this
                     year. Check out this year's
                     <span>
                         workshops
@@ -112,18 +132,28 @@
                     </span>
                     for updates!
                 </p>
-                <div class="workshopImg1">
-                    <img src="">
-                    <img src="">
-                </div>
-                <div class="workshopImg2">
-                    <img>
+                <div class="workShop-container">
+                    <div>
+                        <img
+                            src="https://d33wubrfki0l68.cloudfront.net/ff0d189595c5ebff23f5f6663f9e66418fe4c6da/129f9/static/2019/img/workshops/ww1.jpg">
+                    </div>
+                    <div>
+                        <img
+                            src="https://d33wubrfki0l68.cloudfront.net/b00b5b1d782ae07ba91056a5b9aa7e936bc4538c/2460b/static/2019/img/workshops/ww2.jpg">
+                    </div>
+                    <div>
+                        <img
+                            src="https://d33wubrfki0l68.cloudfront.net/d64ef92ac748b85553a03c329d7417aafccc9894/50199/static/2019/img/workshops/ww5.jpg">
+                    </div>
                 </div>
             </section>
 
+            <div class="line"></div>
+
             <section class="location">
-                <h2>Location</h2>
-                <p>Join us this fall in historic Asbury Park,NJ. <span>Learn more</span>about the venue and location</p>
+                <h1>Location</h1>
+                <p class="paragraph">Join us this fall in historic Asbury Park,NJ. <span>Learn more</span>about the
+                    venue and location</p>
                 <div class="location-content">
                     <img src="">
                     <div>
@@ -144,9 +174,12 @@
                 </div>
             </section>
 
+            <div class="line"></div>
+
             <section class="sponsors">
-                <h2>Sponsors</h2>
-                <p>Big thanks to our sponsors! Many of our sponsors have created an active and ongoing relationship with
+                <h1>Sponsors</h1>
+                <p class="paragraph">Big thanks to our sponsors! Many of our sponsors have created an active and ongoing
+                    relationship with
                     the Jersey Shore Tech community.Interested in sponsoring Asbury Agile?</p>
                 <p><a href="">Contact Us</a></p>
 
@@ -191,11 +224,40 @@
                 </div>
             </section>
 
-            <section>
-                <h2>Learn More</h2>
+            <div class="line"></div>
+
+            <section class="learn-more">
+                <h1>Learn More</h1>
+                <p class="paragraph">Asbury Agile is less about agile methodology and more about being an agile, well
+                    rounded, nimble
+                    professional. Topics range across disciplines and the intimate event allows for open and informal
+                    discussions. Check out some highlights from 2017.</p>
+                <div class="learn-more-content">
+                    <img src="">
+                </div>
             </section>
+
+            <div class="line"></div>
+
+            <section class="newsletter">
+                <h1>Newsletter</h1>
+                <p class="paragraph">Join our newsletter to receive special announcements, and some of our favorite
+                    pizza recipes... just
+                    checking if you were reading </p>
+                <div class="newsletter-content">
+                    <button>Join Newsletter</button>
+                </div>
+            </section>
+
         </div>
     </main>
+
+    <footer>
+        <p>We like to share things on Twitter, Facebook, Instagram
+            This is a Monty Lounge Industries, Cowerks, and Jersey Shore Tech Meetup production.Proudly made in NJ.
+            Contact us.
+        </p>
+    </footer>
 
 </body>
 
