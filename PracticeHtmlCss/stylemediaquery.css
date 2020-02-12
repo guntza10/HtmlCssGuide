@@ -2,6 +2,10 @@
 
 
 /* if less than 1400px -> media query will active */
+/* 
+    min-width => if greater than
+    max-width => if less than
+ */
 
 @media screen and (max-width:1400px) {
     .banner .welcome h2 {
