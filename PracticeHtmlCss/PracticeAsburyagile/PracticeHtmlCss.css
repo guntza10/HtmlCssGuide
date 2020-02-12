@@ -24,6 +24,7 @@ header {
 
 nav ul {
   display: flex;
+  justify-content: center;
 }
 
 nav ul li {
@@ -34,6 +35,7 @@ nav ul li {
 }
 
 nav ul li a {
+  text-align: center;
   text-decoration: none;
   font-weight: bold;
   color: black;
@@ -46,13 +48,13 @@ nav ul li a:hover {
 /*#region banner*/
 
 .banner {
-  background-color: #141414;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 700px;
   margin: 0 auto;
+  background-color: #141414;
+  width: 100%;
 }
 
 .banner-container {
@@ -157,7 +159,6 @@ p.paragraph {
 
 .workShop-container {
   display: flex;
-  width: 100%;
   justify-content: center;
 }
 
@@ -315,4 +316,66 @@ footer a {
 
 /* #region responsive */
 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .newsletter.paragraph {
+    font-size: 18px;
+  }
+
+  .speakers {
+    width: 80%;
+  }
+
+  .workShops {
+    width: 80%;
+  }
+
+  .location {
+    width: 80%;
+  }
+
+  .sponsor {
+    width: 80%;
+  }
+
+  .learn-more {
+    width: 80%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-buy-ticket {
+    width: 500px;
+  }
+
+  .newsletter-container button {
+    width: 500px;
+  }
+
+  .workShops {
+    width: 100%;
+  }
+
+  .workShop-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+  }
+
+  .location {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+}
 /* #endregion */
