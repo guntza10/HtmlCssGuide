@@ -1,0 +1,9 @@
+header {
+  height: 50px;
+  background-color: #fff;
+}
+
+a.nav-link {
+  font-weight: bold;
+  color: #1b1b1b;
+}
