@@ -12,93 +12,135 @@
 
 <body>
     <header>
-        <div class="container">
-            <ul class="nav justify-content-center">
-                <li class="nav-item p-3">
-                    <a class="nav-link" href="">Home</a>
-                </li>
-                <li class="nav-item p-3">
-                    <a class="nav-link" href="">About</a>
-                </li>
-                <li class="nav-item p-3">
-                    <a class="nav-link" href="">Speakers</a>
-                </li>
-                <li class="nav-item p-3">
-                    <a class="nav-link" href="">Schedule</a>
-                </li>
-                <li class="nav-item p-3">
-                    <a class="nav-link" href="">Workshops</a>
-                </li>
-                <li class="nav-item p-3">
-                    <a class="nav-link" href="">Location</a>
-                </li>
-                <li class="nav-item p-3">
-                    <a class="nav-link" href="">Buy Tickets</a>
-                </li>
+        <!-- <div class="container-fluid">
+            <ul class="nav justify-content-center  flex-lg-row flex-column">
+                <a class="nav-link" href="">Home</a>
+
+                <a class="nav-link" href="">About</a>
+
+                <a class="nav-link" href="">Speakers</a>
+
+                <a class="nav-link" href="">Schedule</a>
+
+                <a class="nav-link" href="">Workshops</a>
+
+                <a class="nav-link" href="">Location</a>
+
+                <a class="nav-link" href="">Buy Tickets</a>
             </ul>
+        </div> -->
+        <div class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Speakers</a>
+                    </li>
+                    <li>
+                        <a href="">Schedule</a>
+                    </li>
+                    <li>
+                        <a href="">Workshops</a>
+                    </li>
+                    <li>
+                        <a href="">Location</a>
+                    </li>
+                    <li>
+                        <a href="">Buy Tickets</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <div class="banner">
-        <div class="container">
-            <img src="">
-            <p>Asbury Agile is a friendly, informal, single-track conference for technology professionals & students
+        <div class="banner-container">
+            <div class="imgBanner">
+                <img src="img/logo.PNG">
+            </div>
+            <blockquote>Asbury Agile is a friendly, informal, single-track conference for technology professionals &
+                students
                 held annually in Asbury Park, NJ on Friday, October 4th. We also feature workshops on the Thursday,
-                October 3rd, before the conference.</p>
-            <button>Buy Tickets!</button>
+                October 3rd, before the conference.
+            </blockquote>
+            <button class="btnStyle">Buy Tickets!</button>
         </div>
     </div>
 
     <main>
         <div class="container">
-
             <section class="Speakers">
                 <div class="container">
-                    <h2>SPEAKERS</h2>
-                    <p>We're stoked to announce the awesome group of featured speakers below, and
-                        <span>
-                            <a>stay tuned</a>
-                        </span> for more
-                        announcements.</p>
-
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="">
-                            <h4>Skyler Balbus</h4>
-                            <p>Director of Product Design,<span><a>Postlight</a></span></p>
-                        </div>
-                        <div class="col-4">
-                            <img src="">
-                            <h4>Spike Brehm</h4>
-                            <p>Engineering Lead, Emerging Technology R&D, <span><a>Airbnb</a></span></p>
-                        </div>
-                        <div class="col-4">
-                            <img src="">
-                            <h4>Will Gellego</h4>
-                            <p>Senior Software Engineer, <span><a>Fastly</a></span></p>
-                        </div>
+                    <div class="paragraphSection">
+                        <h2>SPEAKERS</h2>
+                        <p>We're stoked to announce the awesome group of featured speakers below, and
+                            <span>
+                                <a href="">stay tuned</a>
+                            </span> for more
+                            announcements.</p>
                     </div>
+                    <div class="row my-5">
+                        <div class="col-md-4 text-center">
+                            <div class="SpeakersImg">
+                                <img
+                                    src="https://d33wubrfki0l68.cloudfront.net/b536cac6f1b467247a1a890a820ee44786e05f7e/505e5/static/2019/img/speakers/skyler.jpg">
+                            </div>
 
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="">
+                            <h4>Skyler Balbus</h4>
+                            <p>Director of Product Design,<span><a href="">Postlight</a></span></p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="SpeakersImg">
+                                <img
+                                    src="https://d33wubrfki0l68.cloudfront.net/dbdb861954164b2cf7dcde7f08c7ca911b6121b4/91fbf/static/2019/img/speakers/spike-headshot.jpg">
+                            </div>
+                            <h4>Spike Brehm</h4>
+                            <p>Engineering Lead, Emerging Technology R&D, <span><a href="">Airbnb</a></span></p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="SpeakersImg">
+                                <img
+                                    src="https://d33wubrfki0l68.cloudfront.net/c73b7076b018b88974c0dc34561b81089886775f/9084c/static/2019/img/speakers/will.jpg">
+                            </div>
+                            <h4>Will Gellego</h4>
+                            <p>Senior Software Engineer, <span><a href="">Fastly</a></span></p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="SpeakersImg">
+                                <img
+                                    src="https://d33wubrfki0l68.cloudfront.net/4522efcd1c65740fedbcefe7547eac92adccfdcb/98d83/static/2019/img/speakers/dmall.png">
+                            </div>
                             <h4>Dan Mall</h4>
-                            <p>Founder and Director, <span><a>SuperFriendly</a></span></p>
+                            <p>Founder and Director, <span><a href="">SuperFriendly</a></span></p>
                         </div>
-                        <div class="col-4">
-                            <img src="">
+                        <div class="col-md-4 text-center">
+                            <div class="SpeakersImg">
+                                <img
+                                    src="https://d33wubrfki0l68.cloudfront.net/8a68ea513ee07207e9802c6a890b81311d0a0ae8/f57cd/static/2019/img/speakers/aditya3.jpg">
+                            </div>
                             <h4>Adiya Mukerjee</h4>
-                            <p>Risk Engineer, <span><a>Stripe</a></span></p>
+                            <p>Risk Engineer, <span><a href="">Stripe</a></span></p>
                         </div>
-                        <div class="col-4">
-                            <img src="">
+                        <div class="col-md-4 text-center">
+                            <div class="SpeakersImg">
+                                <img
+                                    src="https://d33wubrfki0l68.cloudfront.net/48c4c5d6e10b744431e252a0552398fca9744238/5a7b6/static/2019/img/speakers/nitya.png">
+                            </div>
                             <h4>Nitya Narasimhan</h4>
-                            <p>Senior Program Manager, Developer Relations, <span><a>Microsoft</a></span></p>
+                            <p>Senior Program Manager, Developer Relations, <span><a href="">Microsoft</a></span></p>
                         </div>
-                        <div class="col-4">
-                            <img src="">
+                        <div class="col-md-4 text-center">
+                            <div class="SpeakersImg">
+                                <img
+                                    src="https://d33wubrfki0l68.cloudfront.net/39cf840a436ad31f37264cc2e91816b3436ee5a0/2b2fb/static/2019/img/speakers/shawn.jpeg">
+                            </div>
                             <h4>Shawn Wang</h4>
-                            <p>DX Engineer, <span><a>Netlify</a></span></p>
+                            <p>DX Engineer, <span><a href="">Netlify</a></span></p>
                         </div>
                     </div>
                 </div>
@@ -106,12 +148,16 @@
 
             <section class="WorkShops">
                 <div class="container">
-                    <p>Our first year of workshops was a success (thanks!) and we're amped to offer workshops again this
-                        year. Check out this year's <span><a>workshops</a></span> and
-                        <span>
-                            <a>subscribe to our newsletter</a>
-                        </span> for
-                        updates!</p>
+                    <div class="paragraphSection">
+                        <h2>WORKSHOPS</h2>
+                        <p>Our first year of workshops was a success (thanks!) and we're amped to offer workshops again
+                            this
+                            year. Check out this year's <span><a>workshops</a></span> and
+                            <span>
+                                <a>subscribe to our newsletter</a>
+                            </span> for
+                            updates!</p>
+                    </div>
                     <div class="row">
                         <div class="col-4">
                             <img src="">
@@ -128,8 +174,10 @@
 
             <section class="Location">
                 <div class="container">
-                    <h2>LOCATION</h2>
-                    <p>Join us this fall in historic Asbury Park, NJ. Learn more about the venue and location.</p>
+                    <div class="paragraphSection">
+                        <h2>LOCATION</h2>
+                        <p>Join us this fall in historic Asbury Park, NJ. Learn more about the venue and location.</p>
+                    </div>
                     <div class="row">
                         <div class="col-6">
                             <img src="">
@@ -154,12 +202,15 @@
 
             <section class="Sponsorss">
                 <div class="container">
-                    <h2>SPONSORS</h2>
-                    <h>Big thanks to our sponsors! Many of our sponsors have created an active and ongoing relationship
-                        with
-                        the Jersey Shore Tech community. Interested in sponsoring Asbury Agile? <span>
-                            <a>Contact Us</a>
-                        </span>.</h>
+                    <div class="paragraphSection">
+                        <h2>SPONSORS</h2>
+                        <p>Big thanks to our sponsors! Many of our sponsors have created an active and ongoing
+                            relationship
+                            with
+                            the Jersey Shore Tech community. Interested in sponsoring Asbury Agile? <span>
+                                <a>Contact Us</a>
+                            </span>.</p>
+                    </div>
                     <div class="container-fluid">
                         <h3>Platinum Sponsors</h3>
                         <div class="row">
@@ -185,13 +236,91 @@
                         </div>
 
                         <h3>Community Sponsors</h3>
-                        div.row
+                        <div class="row">
+                            <div class="col-6">
+                                <img>
+                            </div>
+                        </div>
+
+                        <h3>Community Sponsors</h3>
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="">
+                            </div>
+                            <div class="col-3">
+                                <img src="">
+                            </div>
+                            <div class="col-3">
+                                <img src="">
+                            </div>
+                            <div class="col-3">
+                                <img src="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="">
+                            </div>
+                            <div class="col-3">
+                                <img src="">
+                            </div>
+                        </div>
+
+                        <h3>Media Sponsors</h3>
+                        <div class="row">
+                            <div class="col-3"><img src=""></div>
+                            <div class="col-2"><img src=""></div>
+                            <div class="col-2"><img src=""></div>
+                            <div class="col-2"><img src=""></div>
+                            <div class="col-3"><img src=""></div>
+                            <div class="col-3"><img src=""></div>
+                        </div>
                     </div>
                 </div>
             </section>
 
+            <section class="LearnMore">
+                <div class="container">
+                    <div class="paragraphSection">
+                        <h2>LEARN MORE</h2>
+                        <p>Asbury Agile is less about agile methodology and more about being an agile, well rounded,
+                            nimble
+                            professional. Topics range across disciplines and the intimate event allows for open and
+                            informal discussions. Check out some highlights from 2017.</p>
+                    </div>
+                    <div class="youtube">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0HBvOnsFWng" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section class="NewsLetter">
+                <div class="container">
+                    <div class="paragraphSection">
+                        <h2>NEWSLETTER</h2>
+                        <p>Join our newsletter to receive special announcements, and some of our favorite pizza
+                            recipes...
+                            just checking if you were reading</p>
+                    </div>
+                    <button>Join Newsletter!</button>
+                </div>
+            </section>
         </div>
     </main>
+
+    <footer>
+        <div class="container">
+            <p>We like to share things on <span><a href="">Twitter</a></span>
+                ,<span><a href="">Facebook</a></span> , <span><a href="">Instagram</a></span>
+                This is a <span><a href="">Monty
+                        Lounge Industries</a></span> ,<span><a href="">Cowerks</a></span>
+                ,<span><a href="">Jersey Shore Tech Meetup</a></span>
+                and production.
+                Proudly made in NJ.<span><a href="">Contact us</a></span>.</p>
+        </div>
+    </footer>
 </body>
 
 </html>

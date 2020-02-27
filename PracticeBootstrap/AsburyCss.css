@@ -1,9 +1,89 @@
 header {
-  height: 50px;
+  padding: 20px;
   background-color: #fff;
 }
 
-a.nav-link {
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
   font-weight: bold;
   color: #1b1b1b;
+}
+
+.banner {
+  height: 700px;
+  background-color: #141414;
+  color: #fff;
+  text-align: center;
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-container blockquote {
+  font-size: 24px;
+}
+
+.imgBanner {
+  margin: 40px auto;
+  width: 100%;
+}
+
+.imgBanner img {
+  max-width: 100%;
+}
+
+.btnStyle {
+  width: 800px;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+  border: none;
+  color: #fff;
+  background-color: #db008b;
+}
+.paragraphSection {
+  text-align: center;
+}
+
+.paragraphSection p {
+  font-size: 20px;
+}
+
+.Speakers {
+  margin: 100px 0;
+}
+
+p span a {
+  color: #db008b;
+}
+
+.SpeakersImg {
+  width: 100%;
+}
+
+.SpeakersImg img {
+  width: 80%;
+}
+
+@media (max-width: 800px) {
+  header ul {
+    flex-direction: column;
+  }
+
+  header ul li {
+    margin: 10px 0;
+  }
 }
